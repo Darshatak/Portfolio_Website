@@ -5,7 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    user-select: none;
+    -webkit-user-drag: none;
 
 }
 
@@ -60,6 +61,7 @@ body{
 }
 
 .nav-list li a{
+    text-transform: capitalize;
     text-decoration: none;
     color: #ffffff;
 }
@@ -320,7 +322,7 @@ body{
     justify-content: center;
     width: 100%;
     max-width: 1000px;
-    margin-top: 50px;
+    margin-top: 100px;
     padding: 5px;
     text-align: center;
     color: rgb(0, 0, 0);
@@ -679,10 +681,19 @@ footer h3{
         }
 } */
 @media only screen and (max-width: 700px){
-    body{
-        height: 100%;
-        width: 100%;
-    }
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        .text-big {
+            font-size: xx-large !important;
+        }
+
+        .text-small {
+            text-align: justify;
+            padding: 10px 40px;
+            font-size: large !important;
+        }
         .firstSection {
             height: 90vh;
             width: 100%;
