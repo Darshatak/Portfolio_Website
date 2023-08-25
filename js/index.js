@@ -1,8 +1,12 @@
-   let currentPage = 1;
-        const itemsPerPage = 3;
-        const containers = document.querySelectorAll('.ag-courses_item');
-        const nextButton = document.getElementById('nextButton');
-        const backButton = document.getElementById('backButton');
+let currentPage = 1;
+const itemsPerPage = 3;
+const containers = document.querySelectorAll('.ag-courses_item');
+const nextButton = document.getElementById('nextButton');
+const backButton = document.getElementById('backButton');
+showItems();
+        document.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            });
 
         nextButton.addEventListener('click', () => {
             currentPage++;
@@ -36,5 +40,5 @@
             backButton.style.display = currentPage > 1 ? 'block' : 'none';
         }
 
-showItems();
+
 
