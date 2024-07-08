@@ -1,245 +1,1360 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta content="2">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio - Darshatak Vyas</title>
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="shortcut icon" href="Asset/favicon.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
 
-    <body>
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-        <div class="background"></div>
-        <nav class="navbar">
-            <ul class="nav-list">
-                <div class="logo"><img src="Asset/teamwork.png" alt="logo"></div>
-                <li><a href="index.html"> Home</a></li>
-                <li><a href="#header"> Myself</a></li>
-                <li><a href="#project"> Project</a></li>
-                <li><a href="#social"> Contact</a></li>
-            </ul>
-            <!-- <div class="rightNav">
-                <input type="text" name="search" id="search">
-                <button class="btn btn-sm">
-                    Search
-                </button>
-            </div> -->
-        </nav>
+  <body>
+    <!--
+    - #MAIN
+  -->
 
-        <section class="firstSection">
-            <div class="firstHalf">
-                <div class="top">
-                    <h1>NAMASTE
-                        <i style="color: salmon;" class=" fa-solid fa-hands-praying fa-bounce">
-                        </i>
-                    </h1>
-                </div>
-                <div class="bottom">
-                    <div class="social">
-                        <ul>
-                            <div class="social-icon">
-                                <a href="https://github.com/Darshatak" target="_blank" style="text-decoration: none;">
-                                    <li>
-                                        <i class="fab fa-github fa-2x" style="color: rgb(81, 80, 81);"></i>
-                                        <p>Github</p>
-                                    </li>
-                                </a>
-                            </div>
-                            <div class="social-icon">
-                                <a href="https://www.instagram.com/darshatak/" target="_blank"
-                                    style="text-decoration: none;">
-                                    <li>
-                                        <i class="fab fa-instagram fa-2x" style="color: rgb(204, 41, 163);"></i>
-                                        <p>Instagram</p>
-                                    </li>
-                                </a>
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
 
-                            </div>
-                            <div class="social-icon">
-                                <a href="https://www.facebook.com/darshatakvyas" target="_blank"
-                                    style="text-decoration: none;">
-                                    <li>
-                                        <i class="fab fa-facebook fa-2x" style="color: rgb(7, 84, 136);"></i>
-                                        <p>Facebook</p>
-                                    </li>
-                                </a>
-                            </div>
-                        </ul>
-                    </div>
-                    <div class="button">
-                        <a href="#header">
-                            <button class="btn">Know About ME</button></a>
-                        <a href="https://drive.google.com/file/d/1llMnNEVPC_ZhV0UMZvJMExUpey03aohq/view?usp=sharing"
-                            target="_blank"><button class="btn" id="resume">Get Resume</button></a>
-                    </div>
-                </div>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Darshatak Vyas"
+              width="80"
+            />
+          </figure>
 
-            </div>
+          <div class="info-content">
+            <h1 class="name" title="Darshatak Vyas">Darshatak Vyas</h1>
 
+            <p class="title">Web developer</p>
+          </div>
 
-            <div class="secondHalf img">
-                <img src="Asset/darsh.png" alt="tent image">
-            </div>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-
-
-        </section>
-
-        <section class="secRight" id="header">
-            <div class="paras">
-                <p class=" text-big">About <span style="color: blueviolet;">Me</span></p><br><br>
-                <p class="text-small">As a highly skilled Android Developer with one year of hands-on experience in
-                    Android Studio, I
-                    possess extensive expertise in utilizing cutting-edge technologies such as MongoDB, PhpMyAdmin,
-                    Java, Python, and
-                    Web Development.<br><br> My capabilities in the areas of SDLC and software testing are
-                    top-notch,
-                    and I have a
-                    proven track record of delivering exceptional results in college. <br><br>With a passion for
-                    exploring emerging
-                    technologies and gadgets, I am a quick learner who possesses excellent attention to
-                    detail.<br><br>
-                    My exceptional
-                    computer skills enable me to work autonomously or as part of a team to achieve organizational
-                    goals.
-                </p>
-
-
-            </div>
-
-
-            <div class="thumbnail">
-                <img src="Asset/teamwork.png" alt="about Us">
-            </div>
-        </section>
-
-        <section class="project" id="project">
-            <h1 style="color: white;">Under Development Projects</h1>
-
-            <section class="ag-courses_box">
-                <div class="ag-courses_item">
-                    <a href="projects/Spotify/index.html" class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            Spotify Clone<br>(Html,Css,JS)
-                        </div>
-
-                        <div class="ag-courses-item_date-box">
-                            Start:
-                            <span class="ag-courses-item_date">
-                                18.08.2023
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                <div class="ag-courses_item">
-                    <a href="projects/Google Drive/index.html" class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            Google Drive Clone<br>(Html,Css,JS)
-                        </div>
-
-                        <div class="ag-courses-item_date-box">
-                            Start:
-                            <span class="ag-courses-item_date">
-                                17.08.2023
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                <div class="ag-courses_item">
-                    <a href="projects/cynthia Website/index.html" class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            Cynthia Website Clone<br>(Mern Basic)
-                        </div>
-
-                        <div class="ag-courses-item_date-box">
-                            Start:
-                            <span class="ag-courses-item_date">
-                                04.01.2023
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-
-                <div class="ag-courses_item">
-                    <a href="#" class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            Util-Box<br>(Android-JAVA)
-                        </div>
-
-                        <div class="ag-courses-item_date-box">
-                            Start:
-                            <span class="ag-courses-item_date">
-                                01.6.2022
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="ag-courses_item">
-                    <a href="#" class="ag-courses-item_link">
-                        <div class="ag-courses-item_bg"></div>
-
-                        <div class="ag-courses-item_title">
-                            Secret Sms Service<br>(Android-JAVA)
-                        </div>
-
-                        <div class="ag-courses-item_date-box">
-                            Start:
-                            <span class="ag-courses-item_date">
-                                21.11.2022
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-
-
-            </section>
-            <div>
-                <button class="btn" id="backButton">Prev</button>
-                <button class="btn" id="nextButton">Next</button>
-            </div>
-        </section>
-
-
-        <div class="contact" id="social">
-            <div class="paras">
-                <h1 class="text-big">Contact <span style="color: blueviolet;">Us</span> </h1><br>
-                <h3 class="text-small">Feel Free to <span style="color: blueviolet;">connect</span> with me</h3>
-                <div class="form">
-                    <form action="contact_form.php" method="POST ">
-
-                        <input type="text" id="firstname" name="firstname" placeholder="First Name " required /><br>
-                        <input type="text" id="lastname" name="lastname" placeholder="Last Name " required><br>
-                        <input type="email" id="email" name="email" placeholder="Email ID " required><br>
-                        <textarea id="query" name="query" placeholder="Write About Suggestions Or Issue "
-                            style="height:200px" required></textarea><br>
-                        <input type="submit" class="btn" value="Submit" style="border-radius: 40px; ">
-                    </form>
-
-                </div>
-            </div>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <footer>
-            <h3>Designed and Developed by <span style="color: blueviolet;">Darshatak</span> Vyas</h3>
-        </footer>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-    </body>
-    <script src="js/index.js"></script>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a
+                  href="mailto:vyasdarshatak15866@gmail.com"
+                  class="contact-link"
+                  >vyasdarshatak15866@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+91" class="contact-link">+91 ********31</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">September 21, 2002</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Mumbai, INDIA</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/darshatakvyas"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://github.com/Darshatak" class="social-link">
+                <ion-icon name="git-branch"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/darshatak/"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Tools</button>
+            </li>
+
+            <!-- <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li> -->
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Experienced full-stack web developer specializing in crafting
+              dynamic, user-friendly web applications. My expertise spans
+              front-end (React, JavaScript) to back-end (Node.js, MySQL) and
+              database design.
+            </p>
+
+            <p>
+              I'm passionate about translating concepts into polished,
+              responsive websites that delight users. Let's collaborate and
+              bring your vision to life.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What I Do</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/web-design-svgrepo-com.svg"
+                    alt="code icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Development</h4>
+                  <p class="service-item-text">
+                    Build dynamic and user-friendly web applications with React,
+                    Node.js, and modern front-end technologies.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/database-svgrepo-com.svg"
+                    alt="database icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Database Design</h4>
+                  <p class="service-item-text">
+                    Design and optimize databases (MySQL, MongoDB) for efficient
+                    data storage and retrieval.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">UI/UX Design</h4>
+                  <p class="service-item-text">
+                    Create visually appealing and user-friendly interfaces with
+                    Adobe XD.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/wordpress-color-svgrepo-com.svg"
+                    alt="WordPress icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">WordPress Development</h4>
+                  <p class="service-item-text">
+                    Develop custom themes, plugins, and manage WordPress sites.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+          <!-- <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Daniel lewis"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Daniel lewis
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were
+                      very pleased with the work done. She has a lot of
+                      experience and is very concerned about the needs of
+                      client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing elit, seds do et eiusmod tempor
+                      incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-2.png"
+                      alt="Jessica miller"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Jessica miller
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were
+                      very pleased with the work done. She has a lot of
+                      experience and is very concerned about the needs of
+                      client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing elit, seds do et eiusmod tempor
+                      incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-3.png"
+                      alt="Emily evans"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Emily evans
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were
+                      very pleased with the work done. She has a lot of
+                      experience and is very concerned about the needs of
+                      client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing elit, seds do et eiusmod tempor
+                      incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-4.png"
+                      alt="Henry william"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Henry william
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were
+                      very pleased with the work done. She has a lot of
+                      experience and is very concerned about the needs of
+                      client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing elit, seds do et eiusmod tempor
+                      incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section> -->
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        -->
+
+          <!-- <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-1-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-2-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-3-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-4-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-5-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-6-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section> -->
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Jai Hind College</h4>
+
+                <span>2020 — 2023</span>
+
+                <p class="timeline-text">
+                  BVOC SD - Bachelor of Vocational Studies in Software
+                  Development
+                </p>
+                <p class="timeline-text">Avg: 8.64</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  J.H Poddar Jr. College of science and commerce
+                </h4>
+
+                <span>2019 - 2020</span>
+
+                <p class="timeline-text">Maths & IT - 72%</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">St. Xavier's High School</h4>
+
+                <span>2002 — 2004</span>
+
+                <p class="timeline-text">10th - 76%</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <a href="https://jupiter-analytics.com/">
+                  <h4 class="h4 timeline-item-title">Jupiter Analytcs</h4></a
+                >
+                <p class="timeline-text">Full-Stack Web Developer (MERN)</p>
+
+                <span>MAR 2024 - PRESENT</span>
+
+                <p class="timeline-text">
+                  Designing and optimizing MongoDB schemas for efficient data
+                  handling, ensuring scalability and seamless integration. Data
+                  handling expertise: Troubleshooting and resolving bottlenecks,
+                  ensuring smooth data processing for optimal user experience.
+                  Performance optimization: Implementing data handling in chunks
+                  to improve system responsiveness and efficiency. API
+                  integration: Successfully incorporating third-party APIs for
+                  enhanced functionality (authentication, data enrichment,
+                  analytics). Quality assurance: Maintaining cross-browser
+                  compatibility, responsiveness, and adherence to industry best
+                  practices.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <a href="https://jupiter-analytics.com/">
+                  <h4 class="h4 timeline-item-title">Jupiter Analytcs</h4></a
+                >
+                <p class="timeline-text">Intern Developer</p>
+
+                <span>OCT 2023 — MAR 2024</span>
+
+                <p class="timeline-text">
+                  I had Worked in CMS Like Wordpress then developed many website
+                  through HTML5, CSS3 and Javascript.
+                </p>
+                <p class="timeline-text">
+                  I have Learned and explored Tools like:
+                </p>
+                <ul class="timeline-text" style="padding-left: 20px">
+                  <li>1. Adobe XD - For Wireframes and designing.</li>
+                  <li>2. WordPress - CMS</li>
+                  <li>
+                    3. HTML5, CSS3, Bootstrap, jQuery, NodeJS, Express, MySQL,
+                    and JavaScript.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Developement</h5>
+                  <data value="80">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Database</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Designing</h5>
+                  <data value="90">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">WordPress</h5>
+                  <data value="50">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="tools">
+          <header>
+            <h2 class="h2 article-title">Tools & Technologies</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Front-end</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Back-end</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Database</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Cloud</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Design</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Other</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Front-end</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Back-end</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Database</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Cloud</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Design</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Other</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="front-end"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/html-5-svgrepo-com.svg"
+                      alt="HTML5"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">HTML5</h3>
+                  <p class="project-category">Front-end</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="front-end"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/css-3-svgrepo-com.svg"
+                      alt="CSS3"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">CSS3</h3>
+                  <p class="project-category">Front-end</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="front-end"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/javascript-svgrepo-com.svg"
+                      alt="JavaScript"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">JavaScript</h3>
+                  <p class="project-category">Front-end</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="front-end"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/react-javascript-js-framework-facebook-svgrepo-com.svg"
+                      alt="React"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">React.js</h3>
+                  <p class="project-category">Front-end</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="front-end"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/bootstrap-svgrepo-com.svg"
+                      alt="Bootstrap"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Bootstrap</h3>
+                  <p class="project-category">Front-end</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="front-end"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/material-ui-svgrepo-com.svg"
+                      alt="Material-UI"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Material-UI</h3>
+                  <p class="project-category">Front-end</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="front-end"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/jquery-svgrepo-com.svg"
+                      alt="jQuery"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">jQuery</h3>
+                  <p class="project-category">Front-end</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="back-end"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/node-js-svgrepo-com.svg"
+                      alt="Node.js"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Node.js</h3>
+                  <p class="project-category">Back-end</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="back-end"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/express-svgrepo-com.svg"
+                      alt="Express.js"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Express.js</h3>
+                  <p class="project-category">Back-end</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="database"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/sql.svg"
+                      alt="MySQL"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">MySQL</h3>
+                  <p class="project-category">Database</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="database"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/mongo-svgrepo-com.svg"
+                      alt="MongoDB"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">MongoDB</h3>
+                  <p class="project-category">Database</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="cloud"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/aws-svgrepo-com.svg"
+                      alt="AWS EC2"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">AWS EC2</h3>
+                  <p class="project-category">Cloud</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="cloud"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/aws-svgrepo-com.svg"
+                      alt="AWS EC2"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">AWS S3 Bucket</h3>
+                  <p class="project-category">Cloud</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="cloud"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/aws-svgrepo-com.svg"
+                      alt="AWS EC2"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">AWS RDS</h3>
+                  <p class="project-category">Cloud</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="cloud"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/docker-svgrepo-com.svg"
+                      alt="AWS EC2"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Docker</h3>
+                  <p class="project-category">Cloud</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/adobe-xd-svgrepo-com.svg"
+                      alt="Adobe XD"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Adobe XD</h3>
+                  <p class="project-category">Design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/figma-svgrepo-com.svg"
+                      alt="Figma"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Figma</h3>
+                  <p class="project-category">Design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="other"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <img
+                      src="./assets/images/wordpress-color-svgrepo-com.svg"
+                      alt="WordPress"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">WordPress</h3>
+                  <p class="project-category">Other</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+        <!-- 
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Design conferences in 2022
+                    </h3>
+
+                    <p class="blog-text">
+                      Veritatis et quasi architecto beatae vitae dicta sunt,
+                      explicabo.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Best fonts every designer
+                    </h3>
+
+                    <p class="blog-text">
+                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis
+                      est eligendi.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-3.jpg"
+                      alt="Design digest #80"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                    <p class="blog-text">
+                      Excepteur sint occaecat cupidatat no proident, quis
+                      nostrum exercitationem ullam corporis suscipit.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-4.jpg"
+                      alt="UI interactions of the week"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      UI interactions of the week
+                    </h3>
+
+                    <p class="blog-text">
+                      Enim ad minim veniam, consectetur adipiscing elit, quis
+                      nostrud exercitation ullamco laboris nisi.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-5.jpg"
+                      alt="The forgotten art of spacing"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      The forgotten art of spacing
+                    </h3>
+
+                    <p class="blog-text">
+                      Maxime placeat, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-6.jpg"
+                      alt="Design digest #79"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                    <p class="blog-text">
+                      Optio cumque nihil impedit uo minus quod maxime placeat,
+                      velit esse cillum.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article> -->
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.67292854917!2d72.71637323810297!3d19.08250200446498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1720412985187!5m2!1sen!2sin"
+                width="400"
+                height="500"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <h3 class="h3 form-title" style="text-align: center">
+            Send Mail if you have any query<br />
+          </h3>
+
+          <!-- <section class="contact-form">
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section> -->
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
