@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  z-index: 2;
+  cursor: none !important;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  cursor: none !important;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+
+#loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 7s both;
+}
+
+#wrapperload {
+  width: 500px;
+  height: 100px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#wrapperload .elem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#wrapperload .elem img {
+  width: 40%;
+}
+
+#wrapperload .elem:nth-child(1) {
+  animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+}
+
+#wrapperload .elem:nth-child(2) {
+  animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 3s both;
+}
+
+#wrapperload .elem:nth-child(3) {
+  animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 5s both;
+}
+
+@keyframes anim {
+  to {
+    margin-top: -100px;
+  }
+}
+
+@keyframes anim2 {
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+#bg {
+  width: 100%;
+  height: 100vh;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: url("./imgs/bg1.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 80px;
+  margin: 0 auto;
+}
+
+nav img {
+  width: 110px;
+}
+
+nav #links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0%;
+  left: 25%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  margin-bottom: -100px;
+}
+
+nav #links a {
+  margin-left: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  opacity: 1;
+  letter-spacing: 4px;
+}
+.navitem {
+  padding: 10px;
+}
+nav #links a.active {
+  display: none;
+}
+
+nav #links a:not(.active):hover {
+  opacity: 1;
+  background-color: #d5d5d5;
+  border-radius: 10px;
+}
+
+nav #links i {
+  margin-left: 50px;
+}
+
+#section1 {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 80px);
+}
+#section2 {
+  display: none;
+  width: 100%;
+  height: calc(100% - 80px);
+}
+
+#left {
+  width: 50%;
+  height: 100%;
+  padding: 100px;
+}
+
+#left #smline {
+  width: 90px;
+  height: 3px;
+  margin-top: 100px;
+  background-color: black;
+}
+
+#left h4 {
+  font-size: 50px;
+  margin-top: 10px;
+  font-family: "Gilroy ☞";
+}
+
+#left img {
+  width: 650px;
+  margin-top: 30px;
+}
+
+#left > h5 {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  margin-top: 20px;
+  font-weight: 700;
+  color: #ff0000;
+}
+
+#left > h5 span {
+  color: rgb(102, 82, 218);
+}
+
+#playbtn img {
+  width: 80px;
+}
+
+#playbtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#playbtn h5 {
+  margin-top: 20px;
+  letter-spacing: 10px;
+  opacity: 0.9;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+#contact {
+  margin-top: 200px;
+}
+
+#contact h3 {
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-size: 12px;
+  opacity: 0.8;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+#contact h6 {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#contact h6 span {
+  color: #04c2c7;
+}
+
+#right {
+  width: 50%;
+  height: 100%;
+}
+
+#right img {
+  width: 100%;
+}
+
+#splash {
+  position: absolute;
+  left: -60px;
+  top: 70%;
+  width: 150px;
+}
+
+#minicircle {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 99999;
+  pointer-events: none;
+  border-radius: 50%;
+  background-color: #e40e0e;
+}
+#minicircle:any-link {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 99999;
+  pointer-events: none;
+  border-radius: 50%;
+  background-color: #0e11e4;
+}
+
+.Name {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  border-radius: 8px;
+
+  display: inline-block;
+}
+.Name1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.SubTag {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.Name:hover {
+  background: linear-gradient(135deg, #fda085 0%, #f6d365 100%);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.custom-link .hover-img:hover {
+  filter: brightness(0.8);
+}
+
+#menu {
+  padding: 10px;
+  font-size: 30px;
+  color: white;
+}
+#menu:hover {
+  background-color: #dadada;
+  color: black;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
